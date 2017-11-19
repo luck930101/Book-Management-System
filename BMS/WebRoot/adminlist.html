@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GB2312">
+<title>Insert title here</title>
+</head>
+<body>
+<SCRIPT language=javascript>
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+window.open(selObj.options[selObj.selectedIndex].value,'main','');
+if (restore) selObj.selectedIndex=0;
+}
+//-->
+</SCRIPT>
+管理员功能
+<form name="form1" method="post" action="">
+<table>
+<tr>
+<td>
+<select name="list1" onChange="MM_jumpMenu('parent',this,0)">
+<option value="book update.jsp">数据更改</option>
+<option value="lending registration.jsp">读者借书登记</option>
+<option value="returning registration.jsp">读者还书登记</option>
+<option value="book reserving.jsp">书籍预留</option>
+<option value="book catalog.jsp">书籍编目</option>
+<option value="book storage.jsp">书籍入库</option>
+<option value="book update.jsp">书籍更新</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<select name="list2" onChange="MM_jumpMenu('parent',this,0)">
+<option value="information inquiry.html">信息查询功能</option>
+<option value="lending information inquiry.jsp">查询用户的借书信息</option>
+<option value="returning information inquiry.jsp">查询用户的还书信息</option>
+<option value="book information inquiry.jsp">查询书籍源信息</option>
+</select>
+</td>
+</tr>
+</td>
+</tr>
+<select name="list3" onChange="MM_jumpMenu('parent',this,0)">
+<option value="member management.html">成员管理</option>
+<option value="reader management.jsp">读者成员管理</option>
+<option value="admin management.jsp">管理员成员管理</option>
+</select>
+</td>
+</tr>
+</table>
+</body>
+</html>
